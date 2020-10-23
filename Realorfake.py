@@ -4,10 +4,6 @@ Created on Sun May  3 21:30:34 2020
 
 @author: Aakash Babu
 """
-
-from warnings import simplefilter
-simplefilter(action='ignore', category=FutureWarning)
-
 import pandas as pd
 import numpy as np
 import pickle
