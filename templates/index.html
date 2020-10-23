@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FAKE NEWS DETECTION</title>
+	<title>FAKE TWEET DETECTION</title>
   	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -33,7 +33,7 @@
 	<div align="center" style="margin-top: 50px;" class="container">
 		<div class="card bg-transparent">
 			<div class="card-header bg-transparent">
-				<p id="source" data-text="FAKE NEWS DETECTION !"></p>
+				<p id="source" data-text="FAKE TWEETS DETECTION !"></p>
 				<h1 id="dest"></h1>
 			</div><br>
 			<div class="card-body bg-transparent">
@@ -69,7 +69,7 @@
 		    	bootbox.alert({
       			 	size: "big",
     				title: "EMPTY FIELD",
-				    message: "Please enter some news!",
+				    message: "Please enter some tweet!",
 				    backdrop: true
 				});
 	      	}
@@ -86,7 +86,7 @@
 		      		bootbox.alert({
 	      			 	size: "big",
 	    				title: "PREDICTION",
-					    message: "<div align='center'><h2>NEWS IS "+data.result+"</h2><img style='width:240px;height:232px;' src='"+src+"'/></div>",
+					    message: "<div align='center'><h2>TWEET IS "+data.result+"</h2><img style='width:240px;height:232px;' src='"+src+"'/></div>",
 					    backdrop: true,
 					    callback: function(){ 
 					    	setTimeout(function(){
